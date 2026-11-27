@@ -1,0 +1,247 @@
+1
+00:00:01,528 --> 00:00:04,036
+Daniel and Mei have a little boy, Kai.
+
+2
+00:00:04,036 --> 00:00:06,780
+He is three, and their days are full.
+
+3
+00:00:07,803 --> 00:00:10,278
+So they hire a live-in helper.
+
+4
+00:00:11,402 --> 00:00:13,593
+Mya comes from Myanmar.
+
+5
+00:00:13,593 --> 00:00:15,567
+It is her first job,
+
+6
+00:00:15,567 --> 00:00:18,058
+and her English is limited.
+
+7
+00:00:19,169 --> 00:00:21,913
+A translate app helps for a moment.
+
+8
+00:00:21,913 --> 00:00:24,258
+The words come out in Burmese,
+
+9
+00:00:24,258 --> 00:00:25,824
+then they are gone.
+
+10
+00:00:26,812 --> 00:00:28,790
+Helper Diary keeps them.
+
+11
+00:00:28,908 --> 00:00:31,551
+Daniel signs in first, as the owner.
+
+12
+00:00:34,458 --> 00:00:37,125
+He invites Mei as an employer.
+
+13
+00:00:41,914 --> 00:00:44,036
+She picks Chinese.
+
+14
+00:00:46,533 --> 00:00:49,200
+Then he invites Mya as the helper.
+
+15
+00:00:51,726 --> 00:00:55,495
+She picks Burmese, and the whole app follows.
+
+16
+00:01:02,048 --> 00:01:02,779
+On day one,
+
+17
+00:01:02,779 --> 00:01:05,876
+Mei gives the usual brief in Talk.
+
+18
+00:01:08,398 --> 00:01:09,350
+She just speaks,
+
+19
+00:01:09,350 --> 00:01:11,681
+and Mya reads it in Burmese.
+
+20
+00:01:14,873 --> 00:01:17,169
+Mya types her answers back.
+
+21
+00:01:21,436 --> 00:01:23,442
+Every talk is saved.
+
+22
+00:01:24,091 --> 00:01:25,984
+The AI drafts the key points,
+
+23
+00:01:25,984 --> 00:01:27,792
+and Daniel checks them.
+
+24
+00:01:32,720 --> 00:01:35,472
+Safety points, like Kai's allergy,
+
+25
+00:01:35,472 --> 00:01:37,113
+go in straight away.
+
+26
+00:01:43,645 --> 00:01:45,119
+So Mya has a paper trail
+
+27
+00:01:45,119 --> 00:01:46,756
+in her own language,
+
+28
+00:01:46,756 --> 00:01:49,647
+to read again whenever she is unsure.
+
+29
+00:01:56,100 --> 00:01:57,357
+For her week,
+
+30
+00:01:57,357 --> 00:02:00,640
+Daniel asks the AI to write a routine.
+
+31
+00:02:04,258 --> 00:02:07,127
+He checks it and puts it on the calendar.
+
+32
+00:02:12,903 --> 00:02:15,307
+Mya ticks off her tasks on Today
+
+33
+00:02:15,307 --> 00:02:16,739
+as she goes.
+
+34
+00:02:18,593 --> 00:02:21,624
+Kai likes his bread with chocolate spread,
+
+35
+00:02:21,624 --> 00:02:23,455
+cut into a circle.
+
+36
+00:02:23,560 --> 00:02:25,859
+In Kitchen, that is a photo
+
+37
+00:02:25,859 --> 00:02:28,476
+she can look up instead of guessing.
+
+38
+00:02:32,746 --> 00:02:34,430
+Mya keeps her own notes,
+
+39
+00:02:34,430 --> 00:02:36,796
+private until she shares them.
+
+40
+00:02:39,134 --> 00:02:42,207
+Daniel can add to the Notebook any time.
+
+41
+00:02:48,100 --> 00:02:49,621
+When something is unclear,
+
+42
+00:02:49,621 --> 00:02:51,789
+Mya asks in Burmese.
+
+43
+00:02:57,638 --> 00:02:59,702
+Daniel answers in English,
+
+44
+00:03:02,133 --> 00:03:04,401
+and she reads it in Burmese.
+
+45
+00:03:09,867 --> 00:03:11,500
+When Mya moves on,
+
+46
+00:03:11,500 --> 00:03:14,098
+Siti joins from Indonesia.
+
+47
+00:03:14,453 --> 00:03:17,100
+The Notebook, the tasks and the Kitchen
+
+48
+00:03:17,100 --> 00:03:19,594
+are already there, in her language.
+
+49
+00:03:22,329 --> 00:03:24,663
+Nobody repeats the brief.
+
+50
+00:03:25,992 --> 00:03:28,868
+Helper Diary is open source.
+
+51
+00:03:29,225 --> 00:03:31,790
+Each family runs its own copy,
+
+52
+00:03:31,790 --> 00:03:33,230
+with its own AI key,
+
+53
+00:03:33,230 --> 00:03:35,116
+and keeps its own data.
+
+54
+00:03:39,849 --> 00:03:42,904
+Helper Diary is for the first few months,
+
+55
+00:03:42,904 --> 00:03:45,504
+while your helper is still picking up English
+
+56
+00:03:45,504 --> 00:03:47,571
+and your family is still learning
+
+57
+00:03:47,571 --> 00:03:49,173
+how to work with her.
+
+58
+00:03:49,311 --> 00:03:51,087
+It helps her settle in
+
+59
+00:03:51,087 --> 00:03:54,188
+with less guessing and less frustration,
+
+60
+00:03:54,188 --> 00:03:56,252
+for her and for you.
+
+61
+00:03:57,063 --> 00:03:59,850
+If it might help your home too,
+
+62
+00:03:59,850 --> 00:04:01,867
+look for helper-diary.

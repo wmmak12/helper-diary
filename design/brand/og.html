@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Helper Diary social card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@400&family=Noto+Serif+Myanmar:wght@400&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; }
+  .card { position: relative; width: 1200px; height: 630px; overflow: hidden; background: #FDE7CB; font-family: "Newsreader", "Noto Serif SC", "Noto Serif Myanmar", Georgia, serif; color: #1F2A44; }
+  /* hero.png is 1536x1024; its right 45% is calm paper. Shown at 945x630, shifted left so the table sits on the left. */
+  .hero { position: absolute; left: -40px; top: 0; width: 945px; height: 630px; background: url(hero.png) no-repeat 0 0 / 945px 630px; -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); }
+  .ribbon { position: absolute; right: 96px; top: 0; width: 26px; height: 92px; background: #C0646B; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%); }
+  .text { position: absolute; left: 640px; top: 132px; width: 500px; }
+  .mark { width: 50px; height: 78px; background: url(logo-mark.png) no-repeat; background-size: 95px 95px; background-position: -23px -10px; }
+  .name { margin-top: 22px; font-weight: 600; font-size: 66px; line-height: 1.02; letter-spacing: -0.02em; }
+  .line { margin-top: 22px; font-size: 27px; line-height: 1.38; }
+  .langs { margin-top: 26px; font-size: 22px; color: #1F2A44; }
+  .langs span[lang="my"] { font-family: "Noto Serif Myanmar", serif; }
+  .langs span[lang="zh-Hans"] { font-family: "Noto Serif SC", serif; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="hero"></div>
+  <div class="ribbon"></div>
+  <div class="text">
+    <div class="mark"></div>
+    <div class="name">Helper Diary</div>
+    <div class="line">Talk with your helper on one phone. What you agree is written down, in her language.</div>
+    <div class="langs">English · <span lang="zh-Hans">中文</span> · <span lang="my">မြန်မာ</span></div>
+  </div>
+</div>
+</body>
+</html>

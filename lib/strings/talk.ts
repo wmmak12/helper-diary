@@ -1,0 +1,106 @@
+import type { Strings } from "../client/i18n";
+
+type K =
+  | "title" | "with" | "iSpeak" | "hold" | "listening" | "cancelHint" | "tooShort" | "holdHint" | "helperReplies" | "helperGeneric" | "helperKeyboard" | "helperKeyboard2"
+  | "thisTalk" | "emptyToday" | "deleteLine" | "deleteFailed" | "translating" | "hearing" | "edit" | "editLine" | "saveLine" | "speakerYou" | "speakerHelper"
+  | "micBlocked" | "offline" | "translateFailed" | "listenFailed" | "noListen" | "tryAgain" | "typeIt" | "pending" | "typeTitle" | "send" | "boxLabel" | "micKeyHint"
+  | "questionsOpen" | "fromTalk" | "fromTalkLine" | "draftsWaiting" | "noDrafts" | "drafting" | "review" | "photo" | "heardNothing" | "saved"
+  | "micTip" | "pastTalks" | "pastTalksWaiting";
+
+export const talk: Strings<K> = {
+  en: {
+    title: "Talk", with: "with {name}", iSpeak: "I speak", hold: "Hold to talk", listening: "Listening · let go to send", cancelHint: "Let go to cancel",
+    tooShort: "Hold the button while you speak", holdHint: "Only listens while you hold. Let go to translate.", helperReplies: "{name} replies", helperGeneric: "Helper replies",
+    helperKeyboard: "မြန်မာလို", helperKeyboard2: "ရိုက်ရန်", thisTalk: "This talk",
+    emptyToday: "Nothing has been said today yet", deleteLine: "Delete this line", deleteFailed: "Couldn't delete this line. Try again.",
+    translating: "Translating…", hearing: "Writing down what you said…", edit: "Correct this line", editLine: "Correct the line", saveLine: "Save correction",
+    speakerYou: "You", speakerHelper: "Helper",
+    micBlocked: "The microphone is blocked. Allow it for this site in the browser's settings (the lock icon by the address), or type instead.",
+    offline: "No connection. Talking needs a connection. Nothing said is lost.",
+    translateFailed: "The translation didn't come through. Try again, or type instead.",
+    listenFailed: "Listening stopped on this phone. Hold the button and try again, or type.",
+    noListen: "This browser can't listen here. Use the box above: type, or tap your keyboard's mic.",
+    tryAgain: "Try again", typeIt: "Type instead", pending: "Waiting to send", typeTitle: "Type what you want to say", send: "Send", boxLabel: "Speak or type here", micKeyHint: "Tap the mic key on your keyboard to speak",
+    questionsOpen: "Questions from {name} to answer: {n}", fromTalk: "From this talk",
+    fromTalkLine: "Drafted for her Notebook. Nothing reaches her until you approve it.", draftsWaiting: "{n} drafts waiting for you", noDrafts: "Drafts appear here after the talk.",
+    drafting: "Drafting notes from this talk…", review: "Review", photo: "Photo", micTip: "Asked again? In Safari tap aA → Website Settings → Microphone → Allow.", heardNothing: "Nothing was heard. Hold the button and speak again.", saved: "Saved",
+    pastTalks: "Past talks", pastTalksWaiting: "{n} waiting for review",
+  },
+  zh: {
+    title: "对话", with: "与 {name}", iSpeak: "我说", hold: "按住说话", listening: "正在听 · 松开发送", cancelHint: "松开即取消",
+    tooShort: "说话时请一直按住按钮", holdHint: "只在按住时收音。松开即翻译。", helperReplies: "{name} 回复", helperGeneric: "阿姨回复",
+    helperKeyboard: "မြန်မာလို", helperKeyboard2: "ရိုက်ရန်", thisTalk: "本次对话",
+    emptyToday: "今天还没有说话", deleteLine: "删除这一句", deleteFailed: "没能删除这一句，请重试。",
+    translating: "翻译中…", hearing: "正在记录你说的话…", edit: "更正这一句", editLine: "更正这一句", saveLine: "保存更正",
+    speakerYou: "你", speakerHelper: "帮佣",
+    micBlocked: "麦克风被阻止了。请在浏览器设置中为本网站允许麦克风（地址栏旁的锁形图标），或改为打字。",
+    offline: "没有网络。对话需要网络连接。已说的内容不会丢失。",
+    translateFailed: "翻译没有成功。请重试，或改为打字。",
+    listenFailed: "这部手机暂时无法收音。请按住按钮再试，或改为打字。",
+    noListen: "此浏览器无法在这里收音。请用上面的输入框：打字，或点键盘上的麦克风。",
+    tryAgain: "重试", typeIt: "改为打字", pending: "等待发送", typeTitle: "输入你想说的话", send: "发送", boxLabel: "在这里说话或打字", micKeyHint: "点键盘上的麦克风键说话",
+    questionsOpen: "{name} 有 {n} 个问题待回答", fromTalk: "本次对话的草稿",
+    fromTalkLine: "已为她的笔记本起草。你批准之前她看不到。", draftsWaiting: "{n} 条草稿等你审核", noDrafts: "对话结束后，草稿会出现在这里。",
+    drafting: "正在根据对话起草笔记…", review: "审核", photo: "照片", micTip: "又被询问了？在 Safari 点 aA → 网站设置 → 麦克风 → 允许。", heardNothing: "没有听到声音。请按住按钮再说一次。", saved: "已保存",
+    pastTalks: "以前的对话", pastTalksWaiting: "{n} 条等待审核",
+  },
+  my: {
+    title: "စကားပြော", with: "{name} နှင့်", iSpeak: "ကျွန်ုပ်ပြောမည့်ဘာသာ", hold: "ဖိထားပြီး ပြောပါ", listening: "နားထောင်နေသည် · လွှတ်လိုက်လျှင် ပို့မည်", cancelHint: "လွှတ်လိုက်လျှင် ပယ်ဖျက်မည်",
+    tooShort: "ပြောနေစဉ် ခလုတ်ကို ဖိထားပါ", holdHint: "ဖိထားချိန်သာ နားထောင်သည်။", helperReplies: "{name} ပြန်ဖြေမည်", helperGeneric: "အိမ်အကူ ပြန်ဖြေမည်",
+    helperKeyboard: "မြန်မာလို", helperKeyboard2: "ရိုက်ရန်", thisTalk: "ယခုစကားဝိုင်း",
+    emptyToday: "ယနေ့ ဘာမှ မပြောရသေးပါ", deleteLine: "ဤစာကြောင်းကို ဖျက်ရန်", deleteFailed: "ဤစာကြောင်းကို မဖျက်နိုင်ပါ။ ထပ်ကြိုးစားပါ။",
+    translating: "ဘာသာပြန်နေသည်…", hearing: "ရေးမှတ်နေသည်…", edit: "ဤစာကြောင်းကို ပြင်ရန်", editLine: "စာကြောင်းပြင်ရန်", saveLine: "ပြင်ဆင်ချက် သိမ်းရန်",
+    speakerYou: "သင်", speakerHelper: "အိမ်အကူ",
+    micBlocked: "မိုက်ခရိုဖုန်းကို ပိတ်ထားသည်။ ဘရောက်ဇာဆက်တင်တွင် ခွင့်ပြုပါ၊ သို့မဟုတ် စာရိုက်ပါ။",
+    offline: "အင်တာနက် မရှိပါ။ စကားပြောရန် အင်တာနက်လိုသည်။ ပြောပြီးသမျှ မပျောက်ပါ။",
+    translateFailed: "ဘာသာပြန်ခြင်း မအောင်မြင်ပါ။ ထပ်ကြိုးစားပါ၊ သို့မဟုတ် စာရိုက်ပါ။",
+    listenFailed: "ဤဖုန်းတွင် နားထောင်ခြင်း ရပ်သွားသည်။ ထပ်ကြိုးစားပါ၊ သို့မဟုတ် စာရိုက်ပါ။",
+    noListen: "ဤဘရောက်ဇာက နားမထောင်နိုင်ပါ၊ စာရိုက်ပါ။",
+    tryAgain: "ထပ်ကြိုးစားရန်", typeIt: "စာရိုက်ရန်", pending: "ပို့ရန် စောင့်နေသည်", typeTitle: "ပြောချင်သည်ကို ရိုက်ပါ", send: "ပို့ရန်", boxLabel: "ပြောရန် သို့မဟုတ် ရိုက်ရန် ဤနေရာကို နှိပ်ပါ", micKeyHint: "ပြောရန် ကီးဘုတ်ပေါ်ရှိ မိုက်ခလုတ်ကို နှိပ်ပါ",
+    questionsOpen: "ဖြေရန် မေးခွန်း {n} ခု", fromTalk: "ဤစကားဝိုင်းမှ",
+    fromTalkLine: "အတည်မပြုမချင်း သူမ မမြင်ရပါ။", draftsWaiting: "မူကြမ်း {n} ခု စောင့်နေသည်", noDrafts: "မူကြမ်းများ ဤနေရာတွင် ပေါ်မည်။",
+    drafting: "မှတ်စုများ ရေးဆွဲနေသည်…", review: "စစ်ရန်", photo: "ဓာတ်ပုံ", micTip: "Safari တွင် aA → Website Settings → Microphone → Allow ကို နှိပ်ပါ။", heardNothing: "ဘာမှမကြားရပါ။ ထပ်ပြောပါ။", saved: "သိမ်းပြီး",
+  },
+  id: {
+    title: "Bicara", with: "dengan {name}", iSpeak: "Saya bicara", hold: "Tahan untuk bicara", listening: "Mendengarkan · lepas untuk kirim", cancelHint: "Lepas untuk batal",
+    tooShort: "Tahan tombol selama Anda bicara", holdHint: "Hanya mendengar saat ditahan. Lepas untuk menerjemahkan.", helperReplies: "{name} membalas", helperGeneric: "Asisten membalas",
+    helperKeyboard: "Ketik", helperKeyboard2: "balasan", thisTalk: "Percakapan ini",
+    emptyToday: "Belum ada percakapan hari ini", deleteLine: "Hapus kalimat ini", deleteFailed: "Kalimat ini tidak bisa dihapus. Coba lagi.",
+    translating: "Menerjemahkan…", hearing: "Menulis yang Anda katakan…", edit: "Perbaiki kalimat ini", editLine: "Perbaiki kalimat", saveLine: "Simpan perbaikan",
+    speakerYou: "Anda", speakerHelper: "Asisten",
+    micBlocked: "Mikrofon diblokir. Izinkan mikrofon untuk situs ini di pengaturan browser (ikon gembok di samping alamat), atau ketik saja.",
+    offline: "Tidak ada koneksi. Bicara butuh koneksi. Yang sudah dikatakan tidak hilang.",
+    translateFailed: "Terjemahan tidak berhasil. Coba lagi, atau ketik saja.",
+    listenFailed: "HP ini berhenti mendengarkan. Tahan tombol dan coba lagi, atau ketik.",
+    noListen: "Browser ini tidak bisa mendengar di sini. Pakai kotak di atas: ketik, atau tekan mikrofon di keyboard.",
+    tryAgain: "Coba lagi", typeIt: "Ketik saja", pending: "Menunggu dikirim", typeTitle: "Ketik yang ingin Anda katakan", send: "Kirim", boxLabel: "Bicara atau ketik di sini", micKeyHint: "Tekan tombol mikrofon di keyboard untuk bicara",
+    questionsOpen: "Pertanyaan dari {name} yang perlu dijawab: {n}", fromTalk: "Dari percakapan ini",
+    fromTalkLine: "Draf untuk Buku catatan dia. Dia tidak melihatnya sampai Anda setujui.", draftsWaiting: "{n} draf menunggu Anda", noDrafts: "Draf muncul di sini setelah percakapan.",
+    drafting: "Membuat draf catatan dari percakapan ini…", review: "Periksa", photo: "Foto", micTip: "Ditanya lagi? Di Safari tekan aA → Website Settings → Microphone → Allow.", heardNothing: "Tidak terdengar apa-apa. Tahan tombol dan bicara lagi.", saved: "Tersimpan",
+    pastTalks: "Percakapan lalu", pastTalksWaiting: "{n} menunggu diperiksa",
+  },
+  tl: {
+    title: "Usap", with: "kasama si {name}", iSpeak: "Ang wika ko", hold: "Pindutin para magsalita", listening: "Nakikinig · bitawan para ipadala", cancelHint: "Bitawan para kanselahin",
+    tooShort: "Pindutin nang matagal ang button habang nagsasalita", holdHint: "Nakikinig lang habang pinipindot. Bitawan para isalin.", helperReplies: "Sumasagot si {name}", helperGeneric: "Sagot ng kasambahay",
+    helperKeyboard: "I-type", helperKeyboard2: "ang sagot", thisTalk: "Ang usapang ito",
+    emptyToday: "Wala pang usapan ngayon", deleteLine: "Burahin ang linyang ito", deleteFailed: "Hindi nabura ang linyang ito. Subukan ulit.",
+    translating: "Isinasalin…", hearing: "Isinusulat ang sinabi mo…", edit: "Itama ang linyang ito", editLine: "Itama ang linya", saveLine: "I-save ang pagtatama",
+    speakerYou: "Ikaw", speakerHelper: "Kasambahay",
+    micBlocked: "Naka-block ang mikropono. Payagan ito para sa site na ito sa settings ng browser (ang icon na kandado sa tabi ng address), o mag-type na lang.",
+    offline: "Walang koneksyon. Kailangan ng koneksyon para mag-usap. Walang mawawala sa mga nasabi na.",
+    translateFailed: "Hindi natuloy ang salin. Subukan ulit, o mag-type na lang.",
+    listenFailed: "Tumigil ang pakikinig sa phone na ito. Pindutin ang button at subukan ulit, o mag-type.",
+    noListen: "Hindi makapakinig ang browser na ito dito. Gamitin po ang kahon sa itaas: mag-type, o pindutin ang mic sa keyboard.",
+    tryAgain: "Subukan ulit", typeIt: "Mag-type na lang", pending: "Hinihintay ipadala", typeTitle: "I-type ang gusto mong sabihin", send: "Ipadala", boxLabel: "Magsalita o mag-type dito", micKeyHint: "Pindutin ang mic sa keyboard para magsalita",
+    questionsOpen: "Mga tanong ni {name} na sasagutin: {n}", fromTalk: "Mula sa usapang ito",
+    fromTalkLine: "Draft para sa Kuwaderno niya. Hindi niya ito makikita hangga't hindi mo inaaprubahan.", draftsWaiting: "{n} draft ang naghihintay sa iyo", noDrafts: "Lalabas dito ang mga draft pagkatapos ng usapan.",
+    drafting: "Gumagawa ng draft na tala mula sa usapang ito…", review: "Suriin", photo: "Litrato", micTip: "Tinanong ulit? Sa Safari, pindutin ang aA → Website Settings → Microphone → Allow.", heardNothing: "Walang narinig. Pindutin ang button at magsalita ulit.", saved: "Na-save na",
+    pastTalks: "Mga nakaraang usapan", pastTalksWaiting: "{n} ang naghihintay suriin",
+  },
+};
+
+/** Strings the helper reads on the Burmese keyboard (always in her language). */
+export const kb: Strings<"title" | "placeholder" | "send" | "phoneKeyboard" | "appKeyboard" | "shift" | "backspace" | "space" | "close" | "numbers"> = {
+  en: { title: "Type your reply", placeholder: "Type here", send: "Send", phoneKeyboard: "Use phone keyboard", appKeyboard: "Use app keyboard", shift: "More letters", backspace: "Delete", space: "Space", close: "Close", numbers: "Numbers" },
+  my: { title: "သင့်အဖြေကို ရိုက်ပါ", placeholder: "ဤနေရာတွင် ရိုက်ပါ", send: "ပို့ရန်", phoneKeyboard: "ဖုန်းကီးဘုတ် သုံးရန်", appKeyboard: "အက်ပ်ကီးဘုတ် သုံးရန်", shift: "နောက်ထပ်အက္ခရာ", backspace: "ဖျက်ရန်", space: "ကွက်လပ်", close: "ပိတ်ရန်", numbers: "ဂဏန်း" },
+};

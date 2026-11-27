@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-desk: #EFE6D6;
+  --color-paper: #FBF7EF;
+  --color-rule: #E4D8C4;
+  --color-margin: #D8A29F;
+  --color-ink: #1F2A44;
+  --color-muted: #5A6072;
+  --color-primary: #24345C;
+  --color-primary-press: #172340;
+  --color-on-primary: #FBF7EF;
+  --color-ribbon: #C0646B;
+  --color-ribbon-ink: #8E3A41;
+  --color-ribbon-wash: #F5E3DF;
+  --color-ochre: #B7791F;
+  --color-ochre-ink: #7E5210;
+  --color-ochre-wash: #F6EBD6;
+  --color-moss: #4C6838;
+  --color-moss-wash: #E6EBDD;
+  --color-danger: #A33A2E;
+  --color-danger-wash: #F7E2DC;
+  --color-field: #787D8B;
+
+  --font-serif: var(--font-newsreader), var(--font-noto-sc), var(--font-noto-my), Georgia, serif;
+  --radius-page: 6px;
+
+  --ease-ink: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-settle: cubic-bezier(0.34, 1.32, 0.64, 1);
+  --ease-turn: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+:root {
+  --dur-instant: 80ms;
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+  --dur-write: 360ms;
+  --dur-slow: 420ms;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-serif);
+    color: var(--color-ink);
+    background: var(--color-desk);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body { font-size: 18px; line-height: 1.4; min-height: 100dvh; }
+  :lang(my) { font-family: var(--font-noto-my), serif; line-height: 1.95; }
+  :lang(zh-Hans) { font-family: var(--font-noto-sc), serif; line-height: 1.65; }
+  :focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
+  button, [role="button"] { cursor: pointer; touch-action: manipulation; }
+  input, textarea, select { font: inherit; color: inherit; }
+}
+
+@layer components {
+  .page {
+    background: var(--color-paper);
+    border: 1px solid var(--color-rule);
+    border-radius: var(--radius-page);
+  }
+  /* notebook page: paper with a rose margin line at 48px. Each row draws its own rule (border-b) so text never
+     drifts off a fixed grid; .ruled-tail rules the blank space after the last row. */
+  .ruled {
+    background-color: var(--color-paper);
+    background-image: linear-gradient(to right, transparent 47px, var(--color-margin) 47px, var(--color-margin) 48px, transparent 48px);
+  }
+  .ruled-tail {
+    min-height: 96px;
+    background-image:
+      linear-gradient(to right, transparent 47px, var(--color-margin) 47px, var(--color-margin) 48px, transparent 48px),
+      repeating-linear-gradient(to bottom, transparent 0 31px, var(--color-rule) 31px 32px);
+  }
+  .eyebrow { font-size: 14px; font-variant: small-caps; letter-spacing: .06em; text-transform: lowercase; color: var(--color-muted); }
+  .eyebrow:lang(my) { font-variant: normal; letter-spacing: 0; text-transform: none; font-size: 15px; font-weight: 500; }
+  .tabular { font-variant-numeric: tabular-nums; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+    min-height: 52px; padding: 10px 18px; border-radius: 6px; font-size: 17px; font-weight: 500;
+    transition: transform var(--dur-instant) var(--ease-ink), background-color var(--dur-fast) var(--ease-ink);
+    text-align: center;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primary { background: var(--color-primary); color: var(--color-on-primary); }
+  .btn-primary:active { background: var(--color-primary-press); }
+  .btn-quiet { background: var(--color-paper); color: var(--color-ink); border: 1.5px solid var(--color-ink); }
+  .btn-quiet:active { background: var(--color-desk); }
+  .btn-danger { background: var(--color-paper); color: var(--color-danger); border: 1.5px solid var(--color-danger); }
+  .btn-small { min-height: 44px; padding: 8px 14px; font-size: 16px; }
+  .field {
+    width: 100%; min-height: 52px; padding: 12px 14px; border-radius: 6px; font-size: 18px;
+    background: var(--color-paper); border: 1.5px solid var(--color-field);
+  }
+  .field:focus { border-color: var(--color-ink); outline: none; box-shadow: 0 0 0 1px var(--color-ink); }
+  .field[aria-invalid="true"] { border-color: var(--color-danger); }
+  .ribbon {
+    position: absolute; top: -1px; width: 14px; height: 30px; background: var(--color-ribbon);
+    border-radius: 3px 3px 0 0; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+  }
+  .ink-dots span { display: inline-block; width: 6px; height: 6px; border-radius: 9999px; background: currentColor; margin: 0 2px; animation: inkdot 1.2s var(--ease-ink) infinite; }
+  .ink-dots span:nth-child(2) { animation-delay: .15s; }
+  .ink-dots span:nth-child(3) { animation-delay: .3s; }
+  .skeleton { background: var(--color-rule); border-radius: 3px; height: 14px; animation: breathe 1.4s ease-in-out infinite; }
+  /* pen stroke through a ticked task */
+  .pen-stroke {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat; background-position: 0 55%;
+    background-size: 0% 2px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+    transition: background-size var(--dur-fast) ease-in, color var(--dur-write) var(--ease-ink);
+  }
+  .pen-stroke[data-done="true"] { background-size: 100% 2px; color: var(--color-muted); transition: background-size var(--dur-write) var(--ease-ink) var(--dur-fast), color var(--dur-write) var(--ease-ink); }
+}
+
+@keyframes inkdot { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+@keyframes breathe { 0%, 100% { opacity: .5; } 50% { opacity: .9; } }
+@keyframes ring-breathe { 0%, 100% { opacity: .2; } 50% { opacity: .45; } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: var(--dur-fast) !important; transition-property: opacity, color, background-color, border-color !important; }
+  .pen-stroke, .pen-stroke[data-done="true"] { transition: none !important; }
+  .skeleton { animation: none; opacity: .6; }
+  .ink-dots span { animation: none; opacity: .7; }
+}
